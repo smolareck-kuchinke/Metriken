@@ -63,7 +63,9 @@ Die Ausführung war erfolgreich abgeschlossen.
 
 PMD hat einen Analysebericht (`target/pmd.xml`) erstellt.
 
-Der Bericht enthält Hinweise zur Verbesserung von Quellcodes und unterstützt dabei, mögliche Qualitätsprobleme frühzeitig zu erkennen.
+![PMD](images/pmd_xml.png)
+
+Der Bericht enthält keine Beanstandungen, Analysee hat keine Verstöße festgestellt.
 
 ---
 
