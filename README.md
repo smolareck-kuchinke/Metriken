@@ -87,7 +87,7 @@ Die Ausführung lief erfolgreich.
 
 ### Screenshot
 
-![SpotBugs](spotbugs_report.png)
+![SpotBugs](images/spotbugs_report.png)
 
 ## Ergebnis
 
@@ -97,7 +97,7 @@ Insgesamt wurden fünf Klassen analysiert. Dabei wurden keine potenziellen Fehle
 
 ### Analysebericht
 
-![SpotBugs-Bericht](spotbugs_xml.png)
+![SpotBugs-Bericht](images/spotbugs_xml.png)
 
 
 
