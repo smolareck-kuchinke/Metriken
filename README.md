@@ -24,7 +24,7 @@ Die Auswertung verlief erfolgreich.
 
 ### Screenshot
 
-![Checkstyle](checkstyle_report.png)
+![Checkstyle](images/checkstyle_report.png)
 
 ## Ergebnis
 
