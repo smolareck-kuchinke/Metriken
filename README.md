@@ -35,7 +35,7 @@ Checkstyle hat verschiedene Hinweise ausgegeben, unter anderem:
 - Tabulatoren im Quellcode
 - fehlende package-info.java
 
-Es wurden keine Compilerfehler gefunden. Die Hinweise dienen der Verbesserung der Codequalität.
+Es wurden keine Compilerfehler gefunden. Hinweise dienen der Verbesserung der Codequalität.
 
 ---
 
@@ -53,7 +53,7 @@ Die Analyse wurde mit folgendem Maven-Befehl gestartet:
 mvn pmd:pmd
 ```
 
-Die Ausführung wurde erfolgreich abgeschlossen.
+Die Ausführung war erfolgreich abgeschlossen.
 
 ### Screenshot
 
