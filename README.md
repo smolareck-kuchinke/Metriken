@@ -1,8 +1,8 @@
 # Metriken
 
-# MET-E1 – Metriken
+Für diese Aufgabe habe ich erneut mein Projekt SpieltagPLUS verwendet, das bereits in den vorherigen Einsendeaufgaben zum Einsatz kam. Dadurch konnten die Metrik-Werkzeuge direkt auf dem bestehenden Java-/Maven-Projekt angewendet und die Ergebnisse nachvollziehbar ausgewertet werden.
 
-Verwendet: Checkstyle und PMD
+Verwendet: Checkstyle, PMD und SpotBug
 
 ---
 
