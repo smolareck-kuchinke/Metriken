@@ -57,7 +57,7 @@ Die Ausführung wurde erfolgreich abgeschlossen.
 
 ### Screenshot
 
-![PMD](pmd_report.png)
+![PMD](images/pmd_report.png)
 
 ## Ergebnis
 
