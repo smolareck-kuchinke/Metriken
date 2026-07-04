@@ -2,8 +2,6 @@
 
 # MET-E1 – Metriken
 
-## Ziel
-
 Verwendet: Checkstyle und PMD
 
 ---
