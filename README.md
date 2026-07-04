@@ -6,7 +6,7 @@ Verwendet: Checkstyle und PMD
 
 ---
 
-# Checkstyle
+# 1. Checkstyle
 
 ## Beschreibung
 
@@ -39,7 +39,7 @@ Es wurden keine Compilerfehler gefunden. Hinweise dienen der Verbesserung der Co
 
 ---
 
-# PMD
+# 2. PMD
 
 ## Beschreibung
 
@@ -69,10 +69,46 @@ Der Bericht enthält keine Beanstandungen, Analysee hat keine Verstöße festges
 
 ---
 
+# 3. Spotbugs
+
+## Beschreibung
+
+SpotBugs analysiert Java-Programme auf mögliche Fehler und Bug-Muster. Im Gegensatz zu Checkstyle liegt der Schwerpunkt nicht auf dem Programmierstil, sondern auf potenziellen Laufzeitfehlern und problematischen Konstruktionen im Quellcode.
+
+## Durchführung
+
+Die Analyse wurde wieder mit Maven durchgeführt:
+
+```bash
+mvn spotbugs:spotbugs
+```
+
+Die Ausführung lief erfolgreich.
+
+### Screenshot
+
+![SpotBugs](spotbugs_report.png)
+
+## Ergebnis
+
+SpotBugs hat einen Analysebericht (`target/spotbugsXml.xml`) erstellt.
+
+Insgesamt wurden fünf Klassen analysiert. Dabei wurden keine potenziellen Fehler oder Bug-Muster erkannt (`total_bugs="0"`).
+
+### Analysebericht
+
+![SpotBugs-Bericht](spotbugs_xml.png)
+
+
+
 # Fazit
 
-Beide Werkzeuge konnten problemlos in das Maven-Projekt integriert werden.
+Drei Werkzeuge eingesetzt: Checkstyle, PMD und SpotBugs.
 
-Checkstyle konzentriert sich hauptsächlich auf die Einhaltung von Programmier- und Stilrichtlinien. PMD untersucht dagegen zusätzlich die Qualität und Wartbarkeit des Quellcodes.
+Checkstyle identifizierte mehrere Verstöße gegen Programmier- und Stilrichtlinien, beispielsweise fehlende JavaDoc-Kommentare, fehlende `final`-Deklarationen sowie kleinere Formatierungsprobleme.
 
-Ich halte beide Werkzeug für sinnvoll, da sie bereits während der Entwicklung auf mögliche Probleme hinweisen und dadurch die Qualität des Codes verbessern können.
+PMD erzeugte erfolgreich einen Analysebericht, erkannte in diesem Projekt jedoch keine Beanstandungen.
+
+Auch SpotBugs analysierte den Quellcode erfolgreich und untersuchte insgesamt fünf Klassen. Dabei wurden keine potenziellen Fehler oder Bug-Muster gefunden.
+
+Die drei Werkzeuge ergänzen sich sinnvoll, da sie unterschiedliche Aspekte der Softwarequalität untersuchen. Während Checkstyle den Fokus auf Programmierstil und Konventionen legt, analysieren PMD und SpotBugs den Quellcode auf mögliche Qualitätsprobleme und Fehler.
